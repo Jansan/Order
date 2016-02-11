@@ -1,0 +1,93 @@
+﻿body {
+}
+.page-header{
+
+    width:auto;
+    height:200px;
+    background-color:aquamarine;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    margin-top: 100px;
+    margin-left:500px;
+    width:200px;
+    height:200px;
+    background-color:antiquewhite;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding:30px 25px;
+}
+
+.footer{
+    width:auto;
+    height:200px;
+    background-color:#ff0000;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Info-top{
+    margin-top: 105px;
+    text-align:center;
+}
+.Login{
+    width:200px;
+    height:200px;
+    background-color:antiquewhite;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding:30px 25px;
+    margin-left: 500px;
+    margin-top: 80px;
+
+}
+
+.registration-link{
+    text-align:center;
+}
+
+#dropdown {
+    margin-top: 3px;
+    margin-left: 120px;
+    text-align: center;
+}
+#dropdown li {
+     background-color:lightgray;
+     border:1px solid #666;
+     list-style: none;
+     padding:0 0 0 10px;
+     position: relative;
+     height:45px;
+     width:207px;
+     float: left;
+     border-radius:0 0 10px 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+#dropdown li:hover {
+    background-color:snow;
+}
+#dropdown li a {
+    text-decoration:none;
+    
+}
+    #dropdown ul {
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 46px;
+        left: -1px;
+        z-index: 500;
+    }
+#dropdown li:hover ul {
+     display: block;
+}
+#InformationContant {
+    width: 1000px;
+    height: 350px;
+    text-align:left;
+
+}
+

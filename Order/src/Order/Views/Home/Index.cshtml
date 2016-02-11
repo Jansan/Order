@@ -1,5 +1,26 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
+
+<div class="Info-top">
+    <h1>Info!</h1>
+    <p>TextTextTextTextTextTextTextTextText</p>
+</div>
+
+<div class="Login">
+
+    @if (!User.Identity.IsAuthenticated)
+    {
+        @Html.Partial("Login")
+    }
+    else
+    {
+        <a asp-action="Logoff" asp-controller="Account" id="Logoff">
+            <input type="button" value="Logga Ut!" />
+        </a>
+    }
+
+</div>
+
+<div class="registration-link">
+    <p>Är du inte registrerad? klicka på länken registrera!</p>
+    <a href="/account/registration">Registrera!</a>
+</div>

@@ -2,12 +2,65 @@
 
 <html>
 <head>
+    <link href="~/css/stylesheet.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    <div class="page-header">
+
+
+    </div>
+
+
+    <ul id="dropdown">
+        <li>
+            <h4>
+                <a asp-action="Registration" asp-controller="Account">Registrera</a>
+            </h4>
+            <ul>
+                <li><a href="~/account/login">Logga In</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>
+                <a asp-action="Registration" asp-controller="Account">Registrera</a>
+            </h4>
+            <ul>
+                <li><a href="~/account/login">Logga In</a></li>
+            </ul>
+        </li>
+        <li>
+            <h4>
+                <a asp-action="Registration" asp-controller="Account">Registrera</a>
+            </h4>
+            <ul>
+                <li><a href="~/account/login">Logga In</a></li>
+            </ul>
+        </li>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li>
+                <h4>
+                    <a asp-action="Index" asp-controller="Family">Din Familj</a>
+                </h4>
+
+            </li>
+
+        }
+
+        <li>
+            <h4><a href="home/index">Start Sidan</a></h4>
+        </li>
+    </ul>
+    
     <div>
         @RenderBody()
+    </div>
+    <br />
+    <div class="footer">
+
     </div>
 </body>
 </html>
